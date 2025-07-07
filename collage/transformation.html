@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transformation</title>
+    <style>
+        .outer,.inner{
+            height: 400px;
+            width: 400px;
+        
+            
+        }
+        .outer{
+             border: 2px solid tomato;
+             background-color: purple;
+        }
+        .inner{
+            border: 1px solid green;
+            background-color: yellow;
+            /* transform: scale(0.25); */
+            /* transform:scale(.25) rotate(45deg); */
+            transition: transform 6s linear 4s;
+
+        }
+        .inner:hover{
+            transform: scale(.50) rotate(45deg);
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid palevioletred;
+            background-color: brown;
+            transition: width 5s linear 3s;
+        }
+        .box:hover{
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+   <h1>transform</h1>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+
+    <h2>translation</h2>
+    <div class="box">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+</body>
+</html>
